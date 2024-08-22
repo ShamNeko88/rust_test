@@ -1,7 +1,9 @@
 [package]
 name = "try_rust"
 version = "0.1.0"
+authors = ["Unknown <unknown@example.com>"]
 edition = "2021"
 
 [dependencies]
-serde = "1.0"
+
+
