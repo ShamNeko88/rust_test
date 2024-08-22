@@ -3,23 +3,17 @@
 ###### Cargoとは
 - Rustのビルドシステム兼パッケージマネージャー
 - プロジェクトの依存関係の管理やビルドプロセスの容易に行うことができる
+***
 
-
-###### Cargoで新しいプロジェクトの開始
-```powershell
-cargo new [プロジェクト名]
-cd [プロジェクト名]
-cargo build
-cargo run
-```
-
-
+### フォーマット
 ###### Cargoでフォーマット
+- ファイルを直接フォーマットしてくれる
 ```powershell
 cargo fmt
 ```
+***
 
-
+### テスト
 ###### Cargoでテスト
 - #[cfg(test)] と #[test] アトリビュートでテスト関数を定義
 ```rust
@@ -39,8 +33,9 @@ mod tests {
 ```powershell
 cargo test
 ```
+***
 
-
+### 静的解析
 ###### Clippyで静的解析
 ```powershell
 cargo clippy
