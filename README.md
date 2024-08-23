@@ -58,7 +58,7 @@ cargo clippy
   - etc...
 - [dependencies] セクション
   - プロジェクトの依存関係
-  - 必要なライブラリ
+  - 必要なライブラリ（クレート）
 ```toml
 [package]
 name = "try_rust"
@@ -95,4 +95,16 @@ cargo build
 - コンパイルから実行まで一括で行う
 ```powershell
 cargo run
+```
+
+### 型について
+
+- Rustは型を明示的に指定しないと 不変（immutable）となり変数の変更ができない
+- 型は自動で推論してくれる
+```rust
+let name: &str = "Alice";
+```
+- 変数を可変にする場合
+```rust
+let mut name: &str= "Alice"
 ```

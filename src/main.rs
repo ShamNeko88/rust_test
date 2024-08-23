@@ -1,12 +1,7 @@
 fn main() {
-    println!("Hello, world!");
-}
+    let name: &str = "Alice";
+    println!("Hello, {}!", name);
 
-#[cfg(test)]
-
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
+    let x: i32 = 1;
+    println!("My number is {}", x);
 }
